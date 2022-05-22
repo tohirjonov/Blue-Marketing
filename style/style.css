@@ -1,0 +1,231 @@
+@import url(font.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik';
+    background: #E5E5E5;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.btn{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 7px 62px;
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: inline-block;
+}
+.btn:hover{
+    background: #2A86B1;
+}
+.header{
+    padding: 30px 0;
+}
+.header__nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 15px;
+    width: 100px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.header__nav:hover{
+    width: 235px;
+}
+.header__list{
+    width: max-content;
+    padding-left: 15px;
+}
+.header__link{
+    color: #939393;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin: 55px 0;
+}
+.header__icon{
+    font-size: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+.header__link:hover{
+    color: #2A86B1;
+}
+.header__info{
+    background: url(../images/bg.png) no-repeat center / cover;
+    min-height: 500px;
+    border-radius: 14px;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 25px;
+    padding: 0 62px;
+}
+.header__title{
+    font-size: 50px;
+    line-height: 59px;
+    color: #464748;
+    max-width: 332px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.header__txt{
+    max-width: 314px;
+    width: 100%;
+    font-size: 16px;
+    color: #696868;
+}
+.header__title::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: -1;
+    background: #3FA5D5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.option__cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    max-width: 255px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 15px;
+    min-height: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 19px;
+}
+.card__title{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2A86B1;
+}
+.card__icon{
+    font-size: 100px;
+    color: #3FA5D5;
+}
+.article{
+    padding: 44px 0;
+}
+.article__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.article__title{
+    color: #686868;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+.comment__txt{
+    max-width: 825px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #545454;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.cooment__inner{
+    display: flex;
+    flex-direction: column;
+}
+.news__item{
+    max-width: 255px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    column-gap: 15px;
+}
+.news__title{
+    color: #323232;
+    font-size: 17px;
+    line-height: 94.5%;
+    margin-bottom: 5px;
+}
+.news__txt{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 94.5%;
+    color: #000000
+}
+.article__news{
+    display: flex;
+    flex-direction: column;
+}
+.news{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    padding: 40px 0;
+    background: #3FA5D5;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__title{
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 15px;
+    justify-content: center;
+}
+.footer__number{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.footer__email{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
